@@ -8,6 +8,13 @@ public class Player {
     public boolean isBlackJack;
     public ArrayList<Cards> hand = new ArrayList<>();
 
+   public int getScore(){
+       return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
 
     public Player() {
 

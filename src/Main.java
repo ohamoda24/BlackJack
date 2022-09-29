@@ -81,7 +81,7 @@ public class Main implements Runnable, KeyListener {
 //                for (int c = 0; c < players[i].hand.size(); c++) {
 
             players[i].totalScore(); // += players[i].hand.get(c).pointValue;
-            System.out.println(players[i].score);
+            System.out.println(players[i].getScore());
 //                }
         }
     }
@@ -99,7 +99,7 @@ public class Main implements Runnable, KeyListener {
                 if (j < players.length) {
                     players[j].hand.add(deck.get(0));
                     deck.remove(0);
-                    players[j].score += players[j].hand.get(i).pointValue;
+                    players[j].setScore(players[j].hand.get(i).pointValue);
 
 //                        players[j].hand.get(i).printCard();
                 } else {
